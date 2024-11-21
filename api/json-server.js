@@ -1,10 +1,17 @@
 const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('./db.json'); // Caminho para o db.json
+const path = require('path');
+
+// Criar o servidor JSON
+// const router = jsonServer.router('./api/db.json');
+const router = jsonServer.router(path.join(__dirname, 'db.json'));
+
 const middlewares = jsonServer.defaults();
 
-server.use(middlewares);
-server.use(router);
-server.listen(3000, () => {
-  console.log('JSON Server is running');
-});
+// Criando a função handler do Vercel (no lugar de "listen")
+module.exports = (req, res) => {
+  const server = jsonServer.create();
+  server.use(middlewares);
+  server.use(router);
+  server(req, res);  // A função handler serveriza a resposta
+};
+
