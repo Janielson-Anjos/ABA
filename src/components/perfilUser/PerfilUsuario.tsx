@@ -3,7 +3,7 @@ import axios from "axios";
 import { Card, Typography, TextField, Button } from "@mui/material";
 import './PerfilUsuario.css'; // Arquivo CSS para customizações adicionais
 
-const BASE_URL = "http://localhost:3000/Usuario"; // URL do seu servidor
+const BASE_URL = "https://api-aba.vercel.app/Usuario"; // URL do seu servidor
 
 interface Usuario {
   id: string;

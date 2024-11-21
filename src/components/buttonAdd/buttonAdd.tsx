@@ -478,7 +478,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
 
 // const BASE_URL = 'http://localhost:3000/projetos';
-const BASE_URL = 'http://localhost:3000/projetos-pendentes';
+// const BASE_URL = 'http://localhost:3000/projetos-pendentes';
+const BASE_URL = 'https://api-aba.vercel.app/projetos-pendentes';
 
 const StyledButton = styled(IconButton)<IconButtonProps>(({ theme }) => ({
   position: 'fixed',

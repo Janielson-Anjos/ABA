@@ -17,7 +17,7 @@ interface CadastroModalProps {
   onProjetoAdicionado: () => void; // função para atualizar a lista de projetos após adicionar
 }
 
-const BASE_URL = 'http://localhost:3000/projetos';
+const BASE_URL = 'https://api-aba.vercel.app/projetos-pendentes';
 
 const CadastroModal: React.FC<CadastroModalProps> = ({ open, onClose, onProjetoAdicionado }) => {
   const [novoProjeto, setNovoProjeto] = useState<NovoProjeto>({

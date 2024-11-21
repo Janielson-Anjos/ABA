@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import {Link, useNavigate } from 'react-router-dom'
 
-const BASE_URL = "http://localhost:3000/Usuario";
+const BASE_URL = "https://api-aba.vercel.app/Usuario";
 
 interface Usuario {
   nome: string;

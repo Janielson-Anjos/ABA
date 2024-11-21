@@ -165,7 +165,7 @@ interface Usuario {
     fotoPerfil: string;
 }
 
-const BASE_URL = "http://localhost:3000/Usuario";
+const BASE_URL = "https://api-aba.vercel.app/Usuario";
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState<string>("");

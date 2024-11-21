@@ -19,7 +19,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 
-const BASE_URL = "http://localhost:3000/projetos";
+// const BASE_URL = "http://localhost:3000/projetos";
+const BASE_URL = "https://api-aba.vercel.app/projetos";
 
 interface Project {
   id: number;

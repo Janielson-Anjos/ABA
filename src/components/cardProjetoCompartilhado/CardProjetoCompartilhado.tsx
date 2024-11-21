@@ -338,7 +338,7 @@ import { useParams } from "react-router-dom"; // Hook para pegar o id da URL
 import { Card, CardHeader, CardMedia, CardContent, Typography, Avatar } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
-const BASE_URL = "http://localhost:3000/projetos";
+const BASE_URL = "https://api-aba.vercel.app/projetos";
 
 interface Project {
   id: string;
